@@ -7,12 +7,13 @@
           v-model="code"
           placeholder="Your code here"
           rows="30"
+          no-resize
         ></b-form-textarea>
       </b-col>
       <b-col sm="2">
-        <b-button size="lg" @click="translateCode">Traducir</b-button>
+        <b-button size="lg" @click="translateCode">Translate</b-button>
         <b-button size="lg" v-clipboard:copy="codeTranslated"
-          >Copiar codigo</b-button
+          >Copy code</b-button
         >
       </b-col>
 
@@ -22,6 +23,7 @@
           v-model="codeTranslated"
           placeholder="Your code translated here"
           rows="30"
+          no-resize
           readonly
         ></b-form-textarea>
       </b-col>

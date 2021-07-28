@@ -37,16 +37,29 @@ export default {
 </script>
 
 <style>
+html, body {
+  height: 100%;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   text-align: center;
   color: #ffffff;
-  padding-top: 2em;
+  /* margin-top: 2em; */
   background-color: #2c3e50;
   background-size: cover;
-  height: 99vh;
+  height: 100%;
+}
+
+.col-sm-5{
+  margin-top: 2em;
+  padding: 0;
+}
+
+.col-sm-2{
+  margin-top: 2em;
 }
 
 #nav {
@@ -58,11 +71,11 @@ export default {
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.row{
+  margin: 0 !important;
 }
 
-.row {
-  margin-bottom: 2em;
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
